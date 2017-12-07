@@ -1,0 +1,89 @@
+*{
+	box-sizing: border-box;
+}
+
+img{
+	display: block;
+	max-width: 100%;
+}
+
+body{
+	font-family: 'Open Sans', sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6{
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	letter-spacing: 1.5px;
+}
+
+/******* HEADER STYLES *******/
+
+
+.header{
+	height: 60px;
+}
+
+.header .contenedor{
+	display: flex;
+	justify-content: space-between;
+}
+
+.logo{
+	width: 180px;
+}
+
+.logo,.menu-icon{
+	margin: 5px;
+}
+
+.menu-icon{
+	display: block;
+	width: 40px;
+	height: 40px;
+	font-size: 30px;
+	background: #FBA919;
+	color: #FFF;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 5px;
+	margin-left: auto;
+	cursor: pointer;
+}
+
+/******* /HEADER STYLES *******/
+
+/******* MENU STYLES *******/
+
+.nav{
+	position: absolute;
+	top: 60px;
+	left: 0;
+	width: 100%;
+	left: -100%;
+	transition: all 0.4s;
+}
+
+.menu{
+	list-style: none;
+	padding: 0;
+	margin: 0; 
+}
+
+.menu__link{
+	display: block;
+	padding: 15px;
+	background: #FBA919;
+	text-decoration: none;
+	color: #FFF; 
+}
+
+.menu__link:hover{
+	background: #FFF;
+	color: #FBA919;
+}
+
+.mostrar{
+	left: 0;
+}
+
+/******* /MENU STYLES *******/
