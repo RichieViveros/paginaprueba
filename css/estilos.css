@@ -9,6 +9,7 @@ img{
 
 body{
 	font-family: 'Open Sans', sans-serif;
+	margin: 0;
 }
 
 h1,h2,h3,h4,h5,h6{
@@ -16,8 +17,12 @@ h1,h2,h3,h4,h5,h6{
 	letter-spacing: 1.5px;
 }
 
+.section__titulo{
+	text-align: center;
+	font-size: 40px;
+	color: #97CA43; 
+}
 /******* HEADER STYLES *******/
-
 
 .header{
 	height: 60px;
@@ -41,7 +46,7 @@ h1,h2,h3,h4,h5,h6{
 	width: 40px;
 	height: 40px;
 	font-size: 30px;
-	background: #FBA919;
+	background: #97CA43;
 	color: #FFF;
 	text-align: center;
 	line-height: 40px;
@@ -72,14 +77,14 @@ h1,h2,h3,h4,h5,h6{
 .menu__link{
 	display: block;
 	padding: 15px;
-	background: #FBA919;
+	background: #97CA43;
 	text-decoration: none;
 	color: #FFF; 
 }
 
-.menu__link:hover{
+.menu__link:hover, .select{
 	background: #FFF;
-	color: #FBA919;
+	color: #177D3E;
 }
 
 .mostrar{
@@ -87,3 +92,225 @@ h1,h2,h3,h4,h5,h6{
 }
 
 /******* /MENU STYLES *******/
+
+
+/******* BANNER STYLES *******/
+
+.banner{
+	margin-top: -60px;
+	position: relative;
+	z-index: -100;
+	margin-bottom: 15px;
+}
+
+.banner .contenedor{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	width: 100%;
+}
+
+.banner .contenedor{
+	color: #fff;
+	text-align: center;
+}
+
+.banner__txt{
+	display: none;
+}
+
+/******* /BANNER STYLES *******/
+
+
+/******* INFO STYLES *******/
+
+.info__columna{
+	background: #97CA43;
+	color: #fff;
+	padding: 5px;
+	margin-bottom: 20px;
+}
+
+.info__columna img{
+	text-align: center;
+}
+
+/******* /INFO STYLES *******/
+
+
+/******* CURSOS STYLES *******/
+
+.cursos__columna{
+	position: relative;
+	margin-bottom: 30px;
+}
+
+.cursos__descripcion{
+	position: absolute;
+	top: 0;
+	left: 0;
+	color: #fff;
+	background: rgba(0,0,0,.3);
+	width: 60%;
+	height: 100%;
+	padding: 5px;
+}
+
+.cursos__titulo{
+	font-size: 25px;
+	margin: 5px 0;
+}
+
+/******* /CURSOS STYLES *******/
+
+
+/******* FOOTER STYLES *******/
+
+.footer{
+	background: #333;
+	color: #fff;
+	padding: 10px;
+	text-align: center;
+}
+
+.footer .social [class^="fa"]{
+	display: inline-block;
+	color: #333;
+	text-decoration: none;
+	font-size: 20px;
+	padding: 10px;
+	background: #fff;
+	border-radius: 50%;
+	width: 40px;
+	height: 40px;
+	margin: 0 3px 
+}
+
+/******* /FOOTER STYLES *******/
+
+
+
+
+/******* MEDIA QUERIES *******/
+
+@media all and (min-width: 420px){
+	.logo{
+		width: 210px;
+	}
+
+	.banner__titulo{
+		font-size: 30px;
+		margin: 5px 0;
+	}
+
+	.banner__txt{
+		display: block;
+		font-size: 18px;
+		margin: 7px 0;
+	}
+
+	.section__titulo{
+		width: 100%;
+	}
+
+	.footer .social [class^="fa"]{
+		font-size: 30px;
+		width: 50px;
+		height: 50px;
+		margin: 0 8px;
+	}
+
+}
+
+@media all and (min-width: 568px){
+
+}
+
+@media all and (min-width: 633px){
+	.info, .cursos{
+		display: flex;
+		justify-content: space-between;
+		margin-top: -100px; 
+	}
+
+	.info__columna{
+		width: 32%;
+	}
+
+	.info__titulo{
+		font-size: 30px;
+		margin: 5px 0;
+	}
+
+	.cursos{
+		flex-wrap: wrap;
+		margin-top: 0;
+	}
+
+	.cursos__columna{
+		width: 49%;
+	}
+}
+
+@media all and (min-width: 768px){
+	.banner__titulo{
+		font-size: 50px;
+	}
+
+	.cursos__titulo{
+		font-size: 40px;
+	}
+}
+
+@media all and (min-width: 1024px){
+
+	.nav{
+		position: static;
+		width: auto;
+	}
+
+	.menu{
+		display: flex;
+	}
+
+	.menu-icon{
+		display: none;
+	}
+
+	.menu__link{
+		background: none;
+	}
+
+	.select{
+		background: #fff;
+	}
+
+	.banner__titulo{
+		font-size: 60px;
+	}
+
+	.cursos__titulo{
+		font-size: 50px;
+	}
+
+	.info{
+		margin-top: -150px; 
+	}
+}
+
+/******* /MEDIA QUERIES *******/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
