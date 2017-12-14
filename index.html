@@ -6,6 +6,7 @@
 	<link rel="stylesheet" href="css/font-awesome.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:200,300,400,700" rel="stylesheet">
 	<link rel="stylesheet" href="css/estilos.css"/>
+	<link rel="stylesheet" href="css/animate.css"/>
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
 	<!-- <link rel="stylesheet" href="css/materialize.css"/> -->
 	<!-- <link rel="stylesheet" href="css/normalize.css"/> -->
@@ -21,7 +22,7 @@
 					<li class="menu__item"><a class="menu__link select" href="">Inicio</a></li>
 					<li class="menu__item"><a class="menu__link" href="">Cursos</a></li>
 					<li class="menu__item"><a class="menu__link" href="">Docentes</a></li>
-					<li class="menu__item"><a class="menu__link" href="">Contanto</a></li>
+					<li class="menu__item"><a class="menu__link" href="">Contacto</a></li>
 				</ul>
 			</nav>
 		</div>
@@ -30,8 +31,8 @@
 	<div class="banner">
 		<img src="img/xboxwallpaper.jpg" alt="" class="banner__img">
 		<div class="contenedor">
-			<h2 class="banner__titulo">Los mejores juegos de Xbox</h2>
-			<p class="banner__txt">¡Que comience el desmadre!</p>
+			<h2 class="wow bounceInDown banner__titulo">Los mejores juegos de Xbox</h2>
+			<p class="wow bounceInUp banner__txt">¡Que comience el desmadre!</p>
 		</div>
 	</div>
 
@@ -55,13 +56,17 @@
 				</article>
 			</section>
 			<section class="cursos">
-				<h2 class="section__titulo">Explora, diviértete y disfruta</h2>
+				<h2 class="wow zoomIn section__titulo">Explora, diviértete y chinga a todos!
+				</h2>
 				<div class="cursos__columna">
-					<img src="img/previewf7.jpg" alt="" class="cursos__img">
-					<div class="cursos__descripcion">
-						<h3 class="cursos__titulo">Programación</h3>
-						<p class="cursos__txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste, eius.</p>
-					</div>
+					<a href="#">
+						<div class="content-overlay"></div>
+						<img src="img/previewf7.jpg" alt="" class="cursos__img">
+						<div class="cursos__descripcion ">
+							<h3 class="cursos__titulo">Programación</h3>
+							<p class="cursos__txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste, eius.</p>
+						</div>
+					</a>
 				</div>
 				<div class="cursos__columna">
 					<img src="img/halo-reach-1920x1080-HD-wallpaper.jpg" alt="" class="cursos__img">
@@ -97,6 +102,10 @@
 		<small class="copy">&copy; Riccie Viveros 2017 - Todos los derechos reservados. <div id="div1" class="fa"></div></small>
 	</footer>
 	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/wow.min.js"></script>
+       <script>
+          new WOW().init();
+       </script>
 	<script src="js/scripts.js"></script>
 	<script src="js/materialize.js"></script>
 </body>

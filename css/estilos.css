@@ -22,6 +22,13 @@ h1,h2,h3,h4,h5,h6{
 	font-size: 40px;
 	color: #97CA43; 
 }
+
+
+.contenedor{
+	margin: auto;
+	width: 100%; 
+}
+
 /******* HEADER STYLES *******/
 
 .header{
@@ -191,7 +198,6 @@ h1,h2,h3,h4,h5,h6{
 
 
 
-
 /******* MEDIA QUERIES *******/
 
 @media all and (min-width: 420px){
@@ -259,11 +265,15 @@ h1,h2,h3,h4,h5,h6{
 	}
 
 	.cursos__titulo{
-		font-size: 40px;
+		font-size: 30px;
 	}
 }
 
 @media all and (min-width: 1024px){
+
+	.contenedor{
+		width: 1025px;
+	}
 
 	.nav{
 		position: static;
@@ -283,20 +293,75 @@ h1,h2,h3,h4,h5,h6{
 	}
 
 	.select{
-		background: #fff;
+		background: #97CA43;
+		color: #fff;
 	}
+
+/*************** ANIMACIONES DE IMÁGENES Y CONTENIDO ***************/
+
+
+	.cursos__columna{
+		position: relative;
+		cursor: pointer;
+		overflow: hidden; /****Se crea una máscara para que la imagen
+					        al hacer la escala no se salga del contenido ***/
+	}
+
+	.cursos__img{
+		width: 100%;
+		height: 100%;
+		transition: all .2s ease-in;
+	}
+
+	.cursos__columna:hover .cursos__img{
+		transform: scale(1.4);/******* Se hace la escala en 
+									   grande de la imagen ********/
+		filter: brightness(.5);
+	}
+
+                
+	.cursos__titulo{
+		position: relative;
+		transition: all .2s ease-in;
+		right: -490px;
+		font-size: 2vw;
+	}
+
+	.cursos__columna:hover .cursos__titulo{
+		right: 0;
+
+	}
+
+	.cursos__txt{
+		font-size: 20px;
+		position: relative;
+ 		left: -290px;
+ 		transition: all .2s ease-in;
+	}
+
+	.cursos__columna:hover .cursos__txt{
+		left: 0;
+	}
+
+	/*************** /ANIMACIONES DE IMÁGENES Y CONTENIDO ***************/
 
 	.banner__titulo{
-		font-size: 60px;
+		font-size: 50px;
 	}
 
-	.cursos__titulo{
-		font-size: 50px;
+	.banner__txt{
+		font-size: 20px;
+	}
+
+	.cursos__descripcion{
+		padding: 15px;
+		background: none;
 	}
 
 	.info{
 		margin-top: -150px; 
 	}
+
 }
 
 /******* /MEDIA QUERIES *******/
